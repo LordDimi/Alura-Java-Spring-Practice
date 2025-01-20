@@ -43,13 +43,6 @@ public class Main {
         return temporadas;
     }
 
-    private List<DatosEpisodio> setEpisodes(String nombreSerie){
-        List<DatosTemporada> temporadas = setSeries(nombreSerie);
-        List<DatosEpisodio> datosEpisodios = temporadas.stream()
-        .flatMap(t -> t.episodios().stream()).collect(Collectors.toList());
-        return datosEpisodios;
-    }
-
     private List<Episodio> setEpisode(String nombreSerie){
         List<DatosTemporada> temporadas = setSeries(nombreSerie);
         List<Episodio> episodio = temporadas.stream()
