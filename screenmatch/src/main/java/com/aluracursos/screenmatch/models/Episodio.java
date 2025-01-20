@@ -58,7 +58,7 @@ public class Episodio {
 
     @Override
     public String toString() {
-        return "Episodio "+numeroEpisodio+"[\ntemporada=" + temporada + ",\n titulo=" + titulo 
+        return "Episodio: "+titulo+"\n[\n temporada=" + temporada + ",\n Numero de Episodio=" + numeroEpisodio 
                 + ",\n evaluacion=" + evaluacion + ",\n fechaDeLanzamiento=" + fechaDeLanzamiento + "\n]";
     }
 
